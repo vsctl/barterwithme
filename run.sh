@@ -3,7 +3,8 @@
 
 ( set -xe; 
   docker run --rm -it ${IMG_NAME} \
+	--gpus all \
 	--volume ${THIS_DIR}/data:/data:ro \
 	--volume ${IMG_NAME}-cache:/cache \
-	"$@"
-;)
+	"$@";
+)
