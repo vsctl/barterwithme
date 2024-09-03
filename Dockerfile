@@ -1,10 +1,10 @@
 FROM nvidia/cuda:12.6.0-cudnn-devel-ubuntu22.04
 RUN apt update -y
 RUN apt install -y  \
-	python3 python3-pip python3-venv
+	python3 python3-pip
 
 RUN pip install -U \
-        chromadb \
+	deeplake \
     	jq \
         langchain \
         langchainhub \
