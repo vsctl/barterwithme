@@ -4,7 +4,8 @@ from langchain_ollama import ChatOllama
 from langchain_core.messages import HumanMessage, SystemMessage
 
 llm = ChatOllama(
-        model="tinydolphin"
+        model="tinydolphin",
+        base_url="http://host.docker.internal:11434"
 )
 
 
