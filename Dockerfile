@@ -1,4 +1,4 @@
-FROM nvidia/cuda:12.6.0-cudnn-devel-ubuntu22.04
+FROM ubuntu:22.04
 RUN apt update -y
 RUN apt install -y  \
 	python3 python3-pip
@@ -7,6 +7,7 @@ RUN pip install -U \
 	deeplake \
     	jq \
         langchain \
+	langchain-ollama \
         langchainhub \
         langchain_community \
         sentence_transformers \
